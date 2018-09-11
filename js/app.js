@@ -80,7 +80,7 @@ while (true) {
     // Advanced
     case 'a':
     var act2 =prompt('What would you like to do? [+]Add, [-]Subtract, [/]Divide, [*]Multiply, [^]Power, [R] Square root');
-    act = act.toLowerCase();
+    act2 = act2.toLowerCase();
 
     if (act2 === 'r') {
       var value1 =prompt('Enter your value :');
@@ -120,9 +120,18 @@ while (true) {
   if (Answer1 === 'e' || Answer2 ==='e') {
     break;
   }
-  // else if (Answer2 === 'c') {
-  //   again();
-  // }else if (Answer2 === m) {
-  //   return Answer1;
-  // }
+
+  function again(Answer2){
+    var Answer1 = true;
+    do {
+      act1
+    }
+    while (true);
+    Answer2 === 'c';
+  }
 }
+// else if (Answer2 === 'c') {
+//   again();
+// }else if (Answer2 === m) {
+//   return Answer1;
+// }

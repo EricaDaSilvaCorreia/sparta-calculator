@@ -63,15 +63,15 @@ while (true) {
 
     var value2 =prompt('Enter your second value :');
 
-    var act =prompt('What would you like to do with these values? [+]Add, [-]Subtract, [/]Divide, [*]Multiply');
+    var act1 =prompt('What would you like to do with these values? [+]Add, [-]Subtract, [/]Divide, [*]Multiply');
 
-    if (act === '+') {
+    if (act1 === '+') {
       var answer = add(value1, value2);
-    }else if (act === '-') {
+    }else if (act1 === '-') {
       var answer = min(value1, value2);
-    }else if (act === '/') {
+    }else if (act1 === '/') {
       var answer = divide(value1, value2);
-    }else if (act === '*') {
+    }else if (act1 === '*') {
       var answer = multiply(value1, value2);
     }
     alert("the answer is "+answer);
@@ -79,16 +79,16 @@ while (true) {
     break;
     // Advanced
     case 'a':
-    var act =prompt('What would you like to do? [+]Add, [-]Subtract, [/]Divide, [*]Multiply, [^]Power, [R] Square root');
+    var act2 =prompt('What would you like to do? [+]Add, [-]Subtract, [/]Divide, [*]Multiply, [^]Power, [R] Square root');
     act = act.toLowerCase();
 
-    if (act === 'r') {
+    if (act2 === 'r') {
       var value1 =prompt('Enter your value :');
       var answer = root(value1);
       alert("the answer is "+answer);
 
-    }else if (act === '+' || act === '-' || act === '*' || act === '/' || act === '^') {
-      var enter = act;
+    }else if (act2 === '+' || act2 === '-' || act2 === '*' || act2 === '/' || act2 === '^') {
+      var enter = act2;
       var value1 =prompt('Enter your first value :');
       var value2 =prompt('Enter your second value :');
 
@@ -111,19 +111,18 @@ while (true) {
     break;
 
     default:
-    // if (Answer1 === 'e' || Answer1 = false) {
-    //   return;
-    // }
   }
 
-  // var Answer2 = prompt('Enter [E] to exit the calculator [M] to use a different mode or [C] to do another calculation using the current mode');
-  // Answer2 = Answer2.toLowerCase();
-  //
-  // if (Answer1 === 'e' || Answer2 ==='e') {
-  //   break;
-  // }else if (Answer1 === 'b' && Answer2 === 'c') {
-  //   Answer1.repeat(1);
-  // }else if (Answer1 === 'a' && Answer2 === 'c') {
-  //   Answer1.repeat(1);
+  var Answer2 = prompt('Enter [E] to exit the calculator [M] to use a different mode or [C] to do another calculation using the current mode');
+  Answer2 = Answer2.toLowerCase();
+
+
+  if (Answer1 === 'e' || Answer2 ==='e') {
+    break;
+  }
+  // else if (Answer2 === 'c') {
+  //   again();
+  // }else if (Answer2 === m) {
+  //   return Answer1;
   // }
 }

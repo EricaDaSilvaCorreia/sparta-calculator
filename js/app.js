@@ -59,11 +59,11 @@ while (true) {
   switch (Answer1) {
     // Basic
     case 'b':
+    var act1 =prompt('What would you like to do with these values? [+]Add, [-]Subtract, [/]Divide, [*]Multiply');
+    
     var value1 =prompt('Enter your first value :');
 
     var value2 =prompt('Enter your second value :');
-
-    var act1 =prompt('What would you like to do with these values? [+]Add, [-]Subtract, [/]Divide, [*]Multiply');
 
     if (act1 === '+') {
       var answer = add(value1, value2);
@@ -75,6 +75,9 @@ while (true) {
       var answer = multiply(value1, value2);
     }
     alert("the answer is "+answer);
+
+    var Answer2 = prompt('Enter [E] to exit or any other key to recalculate')
+    Answer2 = Answer2.toLowerCase();
 
     break;
     // Advanced
@@ -105,6 +108,8 @@ while (true) {
       }
       alert("the answer is "+answer);
 
+      var Answer2 = prompt('Enter [E] to exit or any other key to recalculate')
+      Answer2 = Answer2.toLowerCase();
 
     }
 
@@ -113,23 +118,30 @@ while (true) {
     default:
   }
 
-  var Answer2 = prompt('Enter [E] to exit the calculator [M] to use a different mode or [C] to do another calculation using the current mode');
-  Answer2 = Answer2.toLowerCase();
+  // var Answer2 = prompt('Enter [E] to exit the calculator or any other key to recalculate');
+  // Answer2 = Answer2.toLowerCase();
+
+  // if (Answer2 === 'c') {
+  //   var Answer2 = Answer1;
+  // }else if (Answer2 === 'm') {
+  //   var Answer2 = act2;
+  // }
 
 
   if (Answer1 === 'e' || Answer2 ==='e') {
     break;
   }
-
-  function again(Answer2){
-    var Answer1 = true;
-    do {
-      act1
-    }
-    while (true);
-    Answer2 === 'c';
   }
-}
+
+//   function again(Answer2){
+//     var Answer1 = true;
+//     do {
+//       act1
+//     }
+//     while (true);
+//     Answer2 === 'c';
+//   }
+// }
 // else if (Answer2 === 'c') {
 //   again();
 // }else if (Answer2 === m) {
